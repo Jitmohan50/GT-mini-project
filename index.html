@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Shortest Path Using Dijkstrar</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <a href="index.html">Shortest Path Finder</a>
+        <a href="./instructions.html"
+          ><img
+            src="https://cdn4.iconfinder.com/data/icons/web-mobile1/100/Untitled-8-512.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="options">
+        <div>
+          <button class="outline-btn" id="add-node-toggle" onclick="toggleAddNodeMode()">Add nodes</button> <!-- Changed button text to "Add nodes" -->
+          <button class="outline-btn" id="add-edge-enable" onclick="addEdges()">Add edges</button> <!-- Added "Add edges" button -->
+          <button class="outline-btn reset-btn" onclick="resetDrawingArea()">Clear</button>
+        </div>
+        <div>
+          <input type="text" inputmode="numeric" id="source-node" placeholder="Source Node">
+          <input type="text" inputmode="numeric" id="destination-node" placeholder="Destination Node">
+          <button class="outline-btn run-btn" onclick="findShortestPath()">Run</button>
+        </div>
+      </div>
+      
+    </header>
+    <div class="drawing-area">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31481.62115339142!2d83.89659773546249!3d21.486683285487455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1712221333335!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="click-instruction">Click to create node</div>
+    </div>
+    
+    <div class="path"></div>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="./gsap.js"></script>
+    <script src="./script.js"></script>
+    
+    <footer>
+      <!-- <p>Created/Developed By <span>GROUP NUMBER-10</span></p> -->
+      <p>Developed By <span>Itishree (Reg. No. 76), Jitmohan (Reg. No. 77), and Shankar (Reg. No. 78) - Group 10</span></p>
+    </footer>
+  </body>
+</html>
